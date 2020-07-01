@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FirstWindow</class>
+ <widget class="QMainWindow" name="FirstWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Информационная система спортивных организаций города</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="tabsMovable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Информация</string>
+    </property>
+    <addaction name="Sportobject"/>
+    <addaction name="Competition"/>
+    <addaction name="Organizer"/>
+    <addaction name="Club"/>
+    <addaction name="Sportsman"/>
+    <addaction name="Trainer"/>
+    <addaction name="Sport"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Запросы</string>
+    </property>
+    <widget class="QMenu" name="menuZapros_1">
+     <property name="title">
+      <string>Перечень спортобъектов</string>
+     </property>
+     <addaction name="Zapros_1_1part"/>
+     <addaction name="Zapros_1_2_part"/>
+    </widget>
+    <addaction name="menuZapros_1"/>
+    <addaction name="separator"/>
+    <addaction name="Zapros_2"/>
+    <addaction name="Zapros_3"/>
+    <addaction name="separator"/>
+    <addaction name="zapros_5"/>
+    <addaction name="zapros_10"/>
+    <addaction name="separator"/>
+    <addaction name="zapros_15"/>
+    <addaction name="zapros_8"/>
+    <addaction name="zapros_14"/>
+    <addaction name="zapros_6"/>
+    <addaction name="zapros_7"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="zapros_11"/>
+    <addaction name="separator"/>
+    <addaction name="zapros_9"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="zapros_13"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_4"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_4">
+   <property name="text">
+    <string>Подключение</string>
+   </property>
+  </action>
+  <action name="Sport">
+   <property name="text">
+    <string>Виды спорта</string>
+   </property>
+  </action>
+  <action name="Club">
+   <property name="text">
+    <string>Клубы</string>
+   </property>
+  </action>
+  <action name="Competition">
+   <property name="text">
+    <string>Соревнования</string>
+   </property>
+  </action>
+  <action name="Organizer">
+   <property name="text">
+    <string>Организаторы</string>
+   </property>
+  </action>
+  <action name="Sportobject">
+   <property name="text">
+    <string>Спортивные объекты</string>
+   </property>
+  </action>
+  <action name="Sportsman">
+   <property name="text">
+    <string>Спортсмены</string>
+   </property>
+  </action>
+  <action name="Trainer">
+   <property name="text">
+    <string>Тренеры</string>
+   </property>
+  </action>
+  <action name="Competition_has_sportsman">
+   <property name="text">
+    <string>Итоги соревнований</string>
+   </property>
+  </action>
+  <action name="Sportsman_has_trainer">
+   <property name="text">
+    <string>Спортсмены и их тренеры</string>
+   </property>
+  </action>
+  <action name="Zapros_2">
+   <property name="text">
+    <string>Спортсмены определенного вида спорта либо клуба</string>
+   </property>
+  </action>
+  <action name="Zapros_3">
+   <property name="text">
+    <string>Спортсмены - поиск по разряду либо по фамилии тренера</string>
+   </property>
+  </action>
+  <action name="Zapros_1_2_part">
+   <property name="text">
+    <string>с вместимостью более...</string>
+   </property>
+  </action>
+  <action name="Zapros_1_1part">
+   <property name="text">
+    <string>с покрытием типа...</string>
+   </property>
+  </action>
+  <action name="zapros_6">
+   <property name="text">
+    <string>Cоревнования, проведенные после определенной даты</string>
+   </property>
+  </action>
+  <action name="zapros_5">
+   <property name="text">
+    <string>Список тренеров спортсмена</string>
+   </property>
+  </action>
+  <action name="zapros_7">
+   <property name="text">
+    <string>Призеры соревнования №...</string>
+   </property>
+  </action>
+  <action name="zapros_8">
+   <property name="text">
+    <string>Соревнования - поиск по месту проведения</string>
+   </property>
+  </action>
+  <action name="zapros_9">
+   <property name="text">
+    <string>Клубы и спортсмены, учавствующие в соревнованих на выбранную дату</string>
+   </property>
+  </action>
+  <action name="zapros_10">
+   <property name="text">
+    <string>Список тренеров по виду спорта</string>
+   </property>
+  </action>
+  <action name="zapros_11">
+   <property name="text">
+    <string>Количество соревнований, организованных выбранным организатором</string>
+   </property>
+  </action>
+  <action name="zapros_13">
+   <property name="text">
+    <string>Спортобъекты и даты проведения соревнований в них с 1-го августа по 1-е сентября</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </action>
+  <action name="zapros_14">
+   <property name="text">
+    <string>Соревнования - поиск по организатору</string>
+   </property>
+  </action>
+  <action name="zapros_15">
+   <property name="text">
+    <string>Соревнования - поиск по виду спорта</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

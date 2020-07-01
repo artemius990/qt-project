@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\firstwindow.o
+./debug\dialogsettings.o
+./debug\tablewindow.o
+./debug\querywindow.o
+./debug\input2nums.o
+./debug\moc_firstwindow.o
+./debug\moc_dialogsettings.o
+./debug\moc_tablewindow.o
+./debug\moc_querywindow.o
+./debug\moc_input2nums.o
+);

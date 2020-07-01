@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\firstwindow.o
+./release\dialogsettings.o
+./release\tablewindow.o
+./release\querywindow.o
+./release\querytwo.o
+./release\moc_firstwindow.o
+./release\moc_dialogsettings.o
+./release\moc_tablewindow.o
+./release\moc_querywindow.o
+./release\moc_querytwo.o
+);
